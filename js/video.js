@@ -1,4 +1,4 @@
-// Video functionality for Wadai Kingdom website
+// Video functionality for Waddai Kingdom website
 function initializeVideoSection() {
     const videoItems = document.querySelectorAll('.video-item');
 

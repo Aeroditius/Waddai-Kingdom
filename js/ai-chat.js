@@ -1,8 +1,8 @@
-// AI Chat System for Wadai Kingdom with OpenAI Integration
-class WadaiAI {
+// AI Chat System for Waddai Kingdom with OpenAI Integration
+class WaddaiAI {
     constructor() {
         // OpenAI API Configuration
-        this.openaiApiKey = 'x';
+        this.openaiApiKey = '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';
         this.openaiApiUrl = 'https://api.openai.com/v1/chat/completions';
         
         // Get current language from global variable or default to Arabic
@@ -112,7 +112,7 @@ class WadaiAI {
                 <div class="chat-header">
                     <div class="chat-header-content">
                         <i class="fas fa-grip-vertical me-2" style="opacity: 0.7; font-size: 14px;"></i>
-                        <h3 id="chatTitle">مساعد وداي الذكي</h3>
+                        <h3 id="chatTitle">مساعد ودّاي الذكي</h3>
                     </div>
                     <button class="chat-close" id="chatClose" title="إغلاق المحادثة / Close Chat / Fermer le Chat">
                         <i class="fas fa-times"></i>
@@ -131,7 +131,7 @@ class WadaiAI {
                 </div>
                 
                 <div class="chat-input-container">
-                    <input type="text" class="chat-input" id="chatInput" placeholder="اسأل عن مملكة وداي...">
+                    <input type="text" class="chat-input" id="chatInput" placeholder="اسأل عن مملكة ودّاي...">
                     <button class="chat-send" id="chatSend">
                         <i class="fas fa-paper-plane"></i>
                     </button>
@@ -360,14 +360,14 @@ class WadaiAI {
 
     updateChatLanguage() {
         const titles = {
-            ar: 'مساعد وداي الذكي',
-            en: 'Wadai AI Assistant',
+            ar: 'مساعد ودّاي الذكي',
+            en: 'Waddai AI Assistant',
             fr: 'Assistant IA Ouaddaï'
         };
         
         const placeholders = {
-            ar: 'اسأل عن مملكة وداي...',
-            en: 'Ask about Kingdom of Wadai...',
+            ar: 'اسأل عن مملكة ودّاي...',
+            en: 'Ask about Kingdom of Waddai...',
             fr: 'Demandez sur le Royaume du Ouaddaï...'
         };
         
@@ -408,8 +408,8 @@ class WadaiAI {
 
     addWelcomeMessage() {
         const welcomeMessages = {
-            ar: 'مرحباً! أنا مساعد ذكي مختص بمملكة وداي. يمكنني الإجابة على أسئلتك حول تاريخ وثقافة وجغرافية مملكة وداي. كيف يمكنني مساعدتك؟',
-            en: 'Hello! I am an AI assistant specialized in the Kingdom of Wadai. I can answer your questions about the history, culture, and geography of the Wadai Kingdom. How can I help you?',
+            ar: 'مرحباً! أنا مساعد ذكي مختص بمملكة ودّاي. يمكنني الإجابة على أسئلتك حول تاريخ وثقافة وجغرافية مملكة ودّاي. كيف يمكنني مساعدتك؟',
+            en: 'Hello! I am an AI assistant specialized in the Kingdom of Waddai. I can answer your questions about the history, culture, and geography of the Waddai Kingdom. How can I help you?',
             fr: 'Bonjour! Je suis un assistant IA spécialisé dans le Royaume du Ouaddaï. Je peux répondre à vos questions sur l\'histoire, la culture et la géographie du Royaume du Ouaddaï. Comment puis-je vous aider?'
         };
         
@@ -418,8 +418,8 @@ class WadaiAI {
 
     addLanguageSwitchWelcomeMessage() {
         const switchMessages = {
-            ar: 'مرحباً! أنا مساعد ذكي مختص بمملكة وداي. يمكنني الإجابة على أسئلتك حول تاريخ وثقافة وجغرافية مملكة وداي باللغة العربية. كيف يمكنني مساعدتك؟',
-            en: 'Hello! I am an AI assistant specialized in the Kingdom of Wadai. I can answer your questions about the history, culture, and geography of the Wadai Kingdom in English. How can I help you?',
+            ar: 'مرحباً! أنا مساعد ذكي مختص بمملكة ودّاي. يمكنني الإجابة على أسئلتك حول تاريخ وثقافة وجغرافية مملكة ودّاي باللغة العربية. كيف يمكنني مساعدتك؟',
+            en: 'Hello! I am an AI assistant specialized in the Kingdom of Waddai. I can answer your questions about the history, culture, and geography of the Waddai Kingdom in English. How can I help you?',
             fr: 'Bonjour! Je suis un assistant IA spécialisé dans le Royaume du Ouaddaï. Je peux répondre à vos questions sur l\'histoire, la culture et la géographie du Royaume du Ouaddaï en français. Comment puis-je vous aider?'
         };
         
@@ -557,27 +557,27 @@ class WadaiAI {
         try {
             // Build system prompt based on current language
             const systemPrompts = {
-                ar: `أنت مساعد ذكي مختص بمملكة وداي التاريخية في تشاد. أجب على جميع الأسئلة باللغة العربية بطريقة ودية ومفيدة. 
+                            ar: `أنت مساعد ذكي مختص بمملكة ودّاي التاريخية في تشاد. أجب على جميع الأسئلة باللغة العربية بطريقة ودية ومفيدة.
 
-معلومات أساسية عن مملكة وداي:
+            معلومات أساسية عن مملكة ودّاي:
 - مملكة تاريخية في شرق تشاد وغرب السودان
 - تأسست في القرن السادس عشر
 - كانت مركزاً مهماً للتجارة والثقافة الإسلامية
 - اشتهرت بالتنوع العرقي والثقافي
 - لها تاريخ غني في الحكم والسياسة والاقتصاد
 
-أجب بشكل مفصل ومفيد عن أي سؤال حول تاريخ وثقافة وجغرافية مملكة وداي.`,
+            أجب بشكل مفصل ومفيد عن أي سؤال حول تاريخ وثقافة وجغرافية مملكة ودّاي.`,
                 
-                en: `You are an AI assistant specialized in the historical Kingdom of Wadai in Chad. Answer all questions in English in a friendly and helpful manner.
+                en: `You are an AI assistant specialized in the historical Kingdom of Waddai in Chad. Answer all questions in English in a friendly and helpful manner.
 
-Basic information about the Kingdom of Wadai:
+Basic information about the Kingdom of Waddai:
 - Historical kingdom in eastern Chad and western Sudan
 - Founded in the 16th century
 - Was an important center for trade and Islamic culture
 - Known for ethnic and cultural diversity
 - Has a rich history in governance, politics, and economy
 
-Provide detailed and helpful answers about the history, culture, and geography of the Wadai Kingdom.`,
+Provide detailed and helpful answers about the history, culture, and geography of the Waddai Kingdom.`,
                 
                 fr: `Vous êtes un assistant IA spécialisé dans le Royaume historique du Ouaddaï au Tchad. Répondez à toutes les questions en français de manière amicale et utile.
 
@@ -682,8 +682,8 @@ Fournissez des réponses détaillées et utiles sur l'histoire, la culture et la
 
     getDefaultResponse(lang) {
         const defaultMessages = {
-            ar: 'أعتذر، لم أفهم سؤالك بوضوح. يمكنك السؤال عن تاريخ مملكة وداي، أو حكامها، أو موقعها، أو ثقافتها. كيف يمكنني مساعدتك؟',
-            en: 'I apologize, I did not understand your question clearly. You can ask about the history of the Wadai Kingdom, its rulers, location, or culture. How can I help you?',
+            ar: 'أعتذر، لم أفهم سؤالك بوضوح. يمكنك السؤال عن تاريخ مملكة ودّاي، أو حكامها، أو موقعها، أو ثقافتها. كيف يمكنني مساعدتك؟',
+            en: 'I apologize, I did not understand your question clearly. You can ask about the history of the Waddai Kingdom, its rulers, location, or culture. How can I help you?',
             fr: 'Je m\'excuse, je n\'ai pas compris clairement votre question. Vous pouvez poser des questions sur l\'histoire du Royaume du Ouaddaï, ses dirigeants, son emplacement ou sa culture. Comment puis-je vous aider?'
         };
         return defaultMessages[lang] || defaultMessages.ar;
@@ -800,25 +800,25 @@ Fournissez des réponses détaillées et utiles sur l'histoire, la culture et la
         
         const categoryResponses = {
             ar: {
-                history: `<strong>تاريخ مملكة وداي:</strong><br><br>${summary}<br><br>لمزيد من التفاصيل، يمكنك زيارة قسم التاريخ في الموقع.`,
-                rulers: `<strong>حكام مملكة وداي:</strong><br><br>${summary}<br><br>يمكنك معرفة المزيد عن السلاطين في قسم التاريخ.`,
-                location: `<strong>موقع مملكة وداي:</strong><br><br>${summary}<br><br>للمزيد من المعلومات الجغرافية، تفضل بزيارة قسم الأماكن والفضاءات.`,
-                culture: `<strong>ثقافة مملكة وداي:</strong><br><br>${summary}<br><br>اكتشف المزيد في قسم التراث الثقافي.`,
-                society: `<strong>مجتمع مملكة وداي:</strong><br><br>${summary}<br><br>تعرف على المزيد في قسم المجتمع والثقافة.`,
-                economy: `<strong>اقتصاد مملكة وداي:</strong><br><br>${summary}<br><br>لمعلومات أكثر تفصيلاً، زر قسم المجتمع.`,
-                architecture: `<strong>عمارة مملكة وداي:</strong><br><br>${summary}<br><br>استكشف المزيد في قسم التراث الثقافي.`,
-                nature: `<strong>طبيعة مملكة وداي:</strong><br><br>${summary}<br><br>اكتشف المزيد في قسم الفضاءات والأماكن.`,
+                            history: `<strong>تاريخ مملكة ودّاي:</strong><br><br>${summary}<br><br>لمزيد من التفاصيل، يمكنك زيارة قسم التاريخ في الموقع.`,
+            rulers: `<strong>حكام مملكة ودّاي:</strong><br><br>${summary}<br><br>يمكنك معرفة المزيد عن السلاطين في قسم التاريخ.`,
+            location: `<strong>موقع مملكة ودّاي:</strong><br><br>${summary}<br><br>للمزيد من المعلومات الجغرافية، تفضل بزيارة قسم الأماكن والفضاءات.`,
+            culture: `<strong>ثقافة مملكة ودّاي:</strong><br><br>${summary}<br><br>اكتشف المزيد في قسم التراث الثقافي.`,
+            society: `<strong>مجتمع مملكة ودّاي:</strong><br><br>${summary}<br><br>تعرف على المزيد في قسم المجتمع والثقافة.`,
+            economy: `<strong>اقتصاد مملكة ودّاي:</strong><br><br>${summary}<br><br>لمعلومات أكثر تفصيلاً، زر قسم المجتمع.`,
+            architecture: `<strong>عمارة مملكة ودّاي:</strong><br><br>${summary}<br><br>استكشف المزيد في قسم التراث الثقافي.`,
+            nature: `<strong>طبيعة مملكة ودّاي:</strong><br><br>${summary}<br><br>اكتشف المزيد في قسم الفضاءات والأماكن.`,
                 general: `${summary}<br><br>لمزيد من المعلومات، يمكنك تصفح الأقسام المختلفة في الموقع أو استخدام الاقتراحات أدناه.`
             },
             en: {
-                history: `<strong>History of Wadai Kingdom:</strong><br><br>${summary}<br><br>For more details, you can visit the History section on the website.`,
-                rulers: `<strong>Rulers of Wadai Kingdom:</strong><br><br>${summary}<br><br>You can learn more about the sultans in the History section.`,
-                location: `<strong>Location of Wadai Kingdom:</strong><br><br>${summary}<br><br>For more geographical information, please visit the Places and Spaces section.`,
-                culture: `<strong>Culture of Wadai Kingdom:</strong><br><br>${summary}<br><br>Discover more in the Cultural Heritage section.`,
-                society: `<strong>Society of Wadai Kingdom:</strong><br><br>${summary}<br><br>Learn more in the Society and Culture section.`,
-                economy: `<strong>Economy of Wadai Kingdom:</strong><br><br>${summary}<br><br>For more detailed information, visit the Society section.`,
-                architecture: `<strong>Architecture of Wadai Kingdom:</strong><br><br>${summary}<br><br>Explore more in the Cultural Heritage section.`,
-                nature: `<strong>Nature of Wadai Kingdom:</strong><br><br>${summary}<br><br>Discover more in the Spaces and Places section.`,
+                history: `<strong>History of Waddai Kingdom:</strong><br><br>${summary}<br><br>For more details, you can visit the History section on the website.`,
+                rulers: `<strong>Rulers of Waddai Kingdom:</strong><br><br>${summary}<br><br>You can learn more about the sultans in the History section.`,
+                location: `<strong>Location of Waddai Kingdom:</strong><br><br>${summary}<br><br>For more geographical information, please visit the Places and Spaces section.`,
+                culture: `<strong>Culture of Waddai Kingdom:</strong><br><br>${summary}<br><br>Discover more in the Cultural Heritage section.`,
+                society: `<strong>Society of Waddai Kingdom:</strong><br><br>${summary}<br><br>Learn more in the Society and Culture section.`,
+                economy: `<strong>Economy of Waddai Kingdom:</strong><br><br>${summary}<br><br>For more detailed information, visit the Society section.`,
+                architecture: `<strong>Architecture of Waddai Kingdom:</strong><br><br>${summary}<br><br>Explore more in the Cultural Heritage section.`,
+                nature: `<strong>Nature of Waddai Kingdom:</strong><br><br>${summary}<br><br>Discover more in the Spaces and Places section.`,
                 general: `${summary}<br><br>For more information, you can browse the different sections on the website or use the suggestions below.`
             },
             fr: {
@@ -842,9 +842,9 @@ Fournissez des réponses détaillées et utiles sur l'histoire, la culture et la
 document.addEventListener('DOMContentLoaded', function() {
     // Wait for other scripts to load and set up the language
     setTimeout(() => {
-        window.wadaiAI = new WadaiAI();
+        window.waddaiAI = new WaddaiAI();
     }, 1500);
 });
 
 // Make it globally available
-window.WadaiAI = WadaiAI; 
+window.WaddaiAI = WaddaiAI; 

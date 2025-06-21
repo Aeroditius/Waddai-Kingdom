@@ -12,7 +12,7 @@ const navigationGroups = {
     },
     geography: {
         label: { ar: 'الجغرافيا والتاريخ', en: 'Geography & History', fr: 'Géographie & Histoire' },
-        items: ['landscape', 'history'],
+        items: ['landscape', 'history', 'places', 'spaces'],
         icon: 'fas fa-globe-africa'
     },
     heritage: {
@@ -77,9 +77,9 @@ function createNavigation() {
             const li = document.createElement('li');
             li.className = 'nav-item';
             li.innerHTML = `
-                <a class="nav-link d-flex align-items-center gap-3" href="#${items[0]}" data-nav="${items[0]}" data-group-label="${group}">
+                <a class="nav-link d-flex align-items-center" href="#${items[0]}" data-nav="${items[0]}" data-group-label="${group}">
                     <i class="${config.icon} me-2"></i>
-                    <span class="nav-text">${config.label[currentLanguage] || config.label['en']}</span>
+                    <span class="nav-text me-2">${config.label[currentLanguage] || config.label['en']}</span>
                 </a>
             `;
             navList.appendChild(li);
@@ -88,10 +88,10 @@ function createNavigation() {
             const li = document.createElement('li');
             li.className = 'nav-item dropdown';
             li.innerHTML = `
-                <a class="nav-link dropdown-toggle d-flex align-items-center gap-3" href="#" role="button" 
+                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" 
                    data-bs-toggle="dropdown" aria-expanded="false" data-nav-group="${group}">
                     <i class="${config.icon} me-2"></i>
-                    <span class="nav-text">${config.label[currentLanguage] || config.label['en']}</span>
+                    <span class="nav-text me-2">${config.label[currentLanguage] || config.label['en']}</span>
                     <i class="fas fa-chevron-down ms-2 dropdown-arrow"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
@@ -99,7 +99,7 @@ function createNavigation() {
                         <li>
                             <a class="dropdown-item d-flex align-items-center" href="#${item}" data-nav="${item}">
                                 <i class="fas fa-circle me-2 dropdown-bullet"></i>
-                                <span class="dropdown-text"></span>
+                                <span class="dropdown-text me-2"></span>
                             </a>
                         </li>
                     `).join('')}
@@ -156,17 +156,22 @@ function createNavigation() {
 // Create content sections
 function createSections() {
     const contentContainer = document.getElementById('content-sections');
+    contentContainer.innerHTML = ''; // Clear existing content first
     
-    // Collect all unique section keys from all languages
-    const allSections = new Set();
-    Object.values(content).forEach(langContent => {
-        if (langContent.sections) {
-            Object.keys(langContent.sections).forEach(key => allSections.add(key));
-        }
+    // Get sections that are referenced in navigation groups
+    const navigationSections = new Set();
+    Object.values(navigationGroups).forEach(group => {
+        group.items.forEach(item => {
+            navigationSections.add(item);
+        });
     });
     
-    // Create sections for all collected keys
-    allSections.forEach(key => {
+    console.log('Navigation sections to create:', Array.from(navigationSections));
+    
+    // Only create sections that exist in navigation groups and have content in Arabic (reference language)
+    navigationSections.forEach(key => {
+        if (content.ar && content.ar.sections && content.ar.sections[key]) {
+            console.log('Creating section:', key);
         const section = document.createElement('section');
         section.className = 'section-card card shadow-sm';
         section.id = key;
@@ -178,9 +183,13 @@ function createSections() {
             </div>
         `;
         contentContainer.appendChild(section);
+        } else {
+            console.log('Skipping section (not in Arabic content):', key);
+        }
     });
 
-    // Add store section
+    // Add store section (shop is in navigation groups)
+    console.log('Creating shop section');
     const storeSection = document.createElement('section');
     storeSection.id = 'shop';
     storeSection.className = 'section-card card shadow-sm';
@@ -191,6 +200,8 @@ function createSections() {
         </div>
     `;
     contentContainer.appendChild(storeSection);
+    
+    console.log('Total sections created:', contentContainer.children.length);
 }
 
 // Switch language function
@@ -273,11 +284,11 @@ function updateContent() {
         const shortName = document.createElement('span');
         shortName.className = 'd-inline d-md-none';
         const abbreviatedNames = {
-            ar: 'وداي',
-            en: 'Wadai',
+            ar: 'ودّاي',
+            en: 'Waddai',
             fr: 'Ouaddaï'
         };
-        shortName.textContent = abbreviatedNames[currentLanguage] || 'Wadai';
+        shortName.textContent = abbreviatedNames[currentLanguage] || 'Waddai';
         
         textContainer.appendChild(fullName);
         textContainer.appendChild(shortName);
@@ -391,6 +402,7 @@ function updateContent() {
     // Setup scroll spy after content is updated
     setupScrollSpy();
     updateLanguageButtons();
+    updateBackToTopLabel();
     
     // Reinitialize gallery after content update
     setTimeout(() => {
@@ -509,13 +521,16 @@ function initializeVideoPlaylist() {
     });
 }
 
-// Create back to top button
+// Create back to top button with multilingual support
 function createBackToTopButton() {
     const backToTopBtn = document.createElement('button');
     backToTopBtn.className = 'back-to-top-btn';
     backToTopBtn.innerHTML = '<i class="fas fa-chevron-up"></i>';
-    backToTopBtn.setAttribute('aria-label', 'Back to top');
+    backToTopBtn.id = 'backToTopBtn';
     document.body.appendChild(backToTopBtn);
+    
+    // Update aria-label based on current language
+    updateBackToTopLabel();
     
     // Show/hide button based on scroll position
     window.addEventListener('scroll', () => {
@@ -526,13 +541,39 @@ function createBackToTopButton() {
         }
     });
     
-    // Smooth scroll to top
+    // Smooth scroll to top with haptic feedback on supported devices
     backToTopBtn.addEventListener('click', () => {
+        // Add click animation
+        backToTopBtn.style.transform = 'translateY(0) scale(0.95)';
+        setTimeout(() => {
+            backToTopBtn.style.transform = '';
+        }, 150);
+        
+        // Scroll to top
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
+        
+        // Optional: Haptic feedback for mobile devices
+        if (navigator.vibrate) {
+            navigator.vibrate(50);
+        }
     });
+}
+
+// Update back-to-top button aria-label based on current language
+function updateBackToTopLabel() {
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    if (backToTopBtn) {
+        const labels = {
+            ar: 'العودة إلى الأعلى',
+            en: 'Back to top',
+            fr: 'Retour en haut'
+        };
+        backToTopBtn.setAttribute('aria-label', labels[currentLanguage] || labels['en']);
+        backToTopBtn.setAttribute('title', labels[currentLanguage] || labels['en']);
+    }
 }
 
 // Add keyboard navigation support
