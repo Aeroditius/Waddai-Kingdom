@@ -1,6 +1,6 @@
 const content = {
     ar: {
-        siteName: "مملكة وداي",
+        siteName: "مملكة ودّاي",
         navigation: {
             mission: "مهمتنا",
             vision: "رؤيتنا",
@@ -29,14 +29,14 @@ const content = {
         sections: {
             mission: {
                 title: '<i class="fas fa-bullseye"></i> مهمتنا',
-                content: "الحفاظ على تراث وتاريخ مملكة وداي ونشر ثقافتها الغنية للأجيال القادمة."
+                content: "الحفاظ على تراث وتاريخ مملكة ودّاي ونشر ثقافتها الغنية للأجيال القادمة."
             },
             vision: {
                 title: '<i class="fas fa-eye"></i> رؤيتنا',
-                content: "أن نكون المصدر الرئيسي للمعرفة عن تاريخ وثقافة مملكة وداي."
+                content: "أن نكون المصدر الرئيسي للمعرفة عن تاريخ وثقافة مملكة ودّاي."
             },
             goals: {
-                title: '<i class="fas fa-target"></i> أهدافنا',
+                title: '<i class="fas fa-trophy"></i> أهدافنا',
                 content: `
                     <div class="goals-grid">
                         <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -45,7 +45,7 @@ const content = {
                                     <div class="card-body text-center">
                                         <i class="fas fa-book-open fa-3x mb-3 text-primary"></i>
                                         <h5 class="card-title">التوثيق والحفظ</h5>
-                                        <p class="card-text">توثيق وحفظ التراث الثقافي والتاريخي لمملكة وداي من خلال البحث والتسجيل المنهجي للمواد التراثية.</p>
+                                        <p class="card-text">توثيق وحفظ التراث الثقافي والتاريخي لمملكة ودّاي من خلال البحث والتسجيل المنهجي للمواد التراثية.</p>
                                     </div>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@ const content = {
                                     <div class="card-body text-center">
                                         <i class="fas fa-graduation-cap fa-3x mb-3 text-success"></i>
                                         <h5 class="card-title">التعليم والتوعية</h5>
-                                        <p class="card-text">نشر الوعي بتاريخ وثقافة مملكة وداي من خلال البرامج التعليمية والورش التراثية للمجتمع.</p>
+                                        <p class="card-text">نشر الوعي بتاريخ وثقافة مملكة ودّاي من خلال البرامج التعليمية والورش التراثية للمجتمع.</p>
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@ const content = {
                                     <div class="card-body text-center">
                                         <i class="fas fa-globe fa-3x mb-3 text-warning"></i>
                                         <h5 class="card-title">التواصل الدولي</h5>
-                                        <p class="card-text">بناء شراكات مع المؤسسات الأكاديمية والثقافية دولياً لتعزيز فهم تراث وداي عالمياً.</p>
+                                        <p class="card-text">بناء شراكات مع المؤسسات الأكاديمية والثقافية دولياً لتعزيز فهم تراث ودّاي عالمياً.</p>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@ const content = {
                     <div class="history-overview mb-4">
                         <div class="alert alert-info">
                             <h4><i class="fas fa-crown me-2"></i>نظرة عامة تاريخية</h4>
-                            <p>تأسست مملكة وداي (أو أوادي) حوالي عام 1635م على يد السلطان عبد الكريم، وازدهرت لأكثر من ثلاثة قرون كواحدة من أهم الممالك الإسلامية في وسط أفريقيا، تقع في ما يُعرف اليوم بشرق تشاد.</p>
+                            <p>تأسست مملكة ودّاي (أو أوادي) حوالي عام 1635م على يد السلطان عبد الكريم، وازدهرت لأكثر من ثلاثة قرون كواحدة من أهم الممالك الإسلامية في وسط أفريقيا، تقع في ما يُعرف اليوم بشرق تشاد.</p>
                         </div>
                     </div>
 
@@ -190,31 +190,7 @@ const content = {
                         </div>
                     </div>
 
-                    <div class="historical-timeline mt-5">
-                        <h4><i class="fas fa-clock me-2"></i>الخط الزمني الرئيسي</h4>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-date">1635</div>
-                                <div class="timeline-content">تأسيس مملكة وداي على يد السلطان عبد الكريم</div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">1681</div>
-                                <div class="timeline-content">بداية حكم السلطان يعقوب عارف وفترة التوسع</div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">1803</div>
-                                <div class="timeline-content">السلطان محمد شريف ينقل العاصمة إلى أبيشي</div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">1874</div>
-                                <div class="timeline-content">بداية المقاومة ضد التوسع الاستعماري الفرنسي</div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">1912</div>
-                                <div class="timeline-content">سقوط آخر سلاطين وداي وانتهاء الحكم المستقل</div>
-                            </div>
-                        </div>
-                    </div>
+
                 `
             },
             society: {
@@ -244,7 +220,7 @@ const content = {
                                         <div class="card-body text-center">
                                             <i class="fas fa-map-marker-alt fa-3x mb-3 text-primary"></i>
                                             <h5 class="card-title">الأماكن</h5>
-                                            <p class="card-text">المواقع الجغرافية والمعالم المحددة في مملكة وداي</p>
+                                            <p class="card-text">المواقع الجغرافية والمعالم المحددة في مملكة ودّاي</p>
                                         </div>
                                     </div>
                                 </a>
@@ -268,7 +244,7 @@ const content = {
             language: {
                 title: '<i class="fas fa-language"></i> اللغة',
                 content: `
-                    <p>اللغة الرئيسية في وداي هي المابا، وهي لغة من عائلة اللغات النيلية الصحراوية. كما تنتشر اللغة العربية التشادية كلغة للتجارة والتواصل. توجد لهجات متعددة مثل لهجات المساليت والتاما. تستخدم الكتابة العربية تقليدياً في الوثائق الرسمية والدينية.</p>
+                    <p>اللغة الرئيسية في ودّاي هي المابا، وهي لغة من عائلة اللغات النيلية الصحراوية. كما تنتشر اللغة العربية التشادية كلغة للتجارة والتواصل. توجد لهجات متعددة مثل لهجات المساليت والتاما. تستخدم الكتابة العربية تقليدياً في الوثائق الرسمية والدينية.</p>
                     
                     <div class="language-resources mt-4">
                         <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -313,7 +289,7 @@ const content = {
                                     <div class="card-body text-center">
                                         <i class="fas fa-landmark fa-3x mb-3 text-primary"></i>
                                         <h5 class="card-title">التاريخ السياسي</h5>
-                                        <p class="card-text">تميز النظام السياسي في وداي بالملكية الوراثية، حيث حكم السلاطين بمساعدة مجلس استشاري. من أشهر الحكام السلطان عبد الكريم صابون والسلطان محمد شريف. عقدت المملكة تحالفات مهمة مع السلطنات المجاورة.</p>
+                                        <p class="card-text">تميز النظام السياسي في ودّاي بالملكية الوراثية، حيث حكم السلاطين بمساعدة مجلس استشاري. من أشهر الحكام السلطان عبد الكريم صابون والسلطان محمد شريف. عقدت المملكة تحالفات مهمة مع السلطنات المجاورة.</p>
                                     </div>
                                 </div>
                             </div>
@@ -340,7 +316,7 @@ const content = {
                                     <div class="card-body text-center">
                                         <i class="fas fa-route fa-3x mb-3 text-warning"></i>
                                         <h5 class="card-title">التجارة القديمة</h5>
-                                        <p class="card-text">اعتمد اقتصاد وداي على التجارة عبر الصحراء، خاصة مع مصر والسودان. كانت المملكة مركزاً مهماً لتجارة العاج والريش والجلود. استخدمت عملات مختلفة للتجارة، بما في ذلك الودع والقطع المعدنية.</p>
+                                        <p class="card-text">اعتمد اقتصاد ودّاي على التجارة عبر الصحراء، خاصة مع مصر والسودان. كانت المملكة مركزاً مهماً لتجارة العاج والريش والجلود. استخدمت عملات مختلفة للتجارة، بما في ذلك الودع والقطع المعدنية.</p>
                                     </div>
                                 </div>
                             </div>
@@ -395,7 +371,7 @@ const content = {
             },
             publications: {
                 title: '<i class="fas fa-book"></i> المنشورات',
-                content: `<p>مجموعة متنوعة من المنشورات حول تاريخ وثقافة مملكة وداي:</p>
+                content: `<p>مجموعة متنوعة من المنشورات حول تاريخ وثقافة مملكة ودّاي:</p>
                 <ul>
                     <li><i class="fas fa-scroll"></i> وثائق تاريخية من العصر الملكي</li>
                     <li><i class="fas fa-file-alt"></i> أوراق بحثية عن التراث الثقافي</li>
@@ -523,8 +499,8 @@ const content = {
                                 <div class="card h-100 ancient-card">
                                     <div class="card-body text-center">
                                         <i class="fas fa-palace fa-3x mb-3 text-danger"></i>
-                                        <h5 class="card-title">مملكة وداي</h5>
-                                        <p class="card-text">المملكة العظيمة وداي</p>
+                                                        <h5 class="card-title">مملكة ودّاي</h5>
+                <p class="card-text">المملكة العظيمة ودّاي</p>
                                     </div>
                                 </div>
                             </div>
@@ -896,7 +872,7 @@ const content = {
                 `
             }
         },
-        footer: "© 2025 مملكة وداي - جميع الحقوق محفوظة",
+        footer: "© 2025 مملكة ودّاي - جميع الحقوق محفوظة",
         store: {
             title: "متجر الكتب",
             description: "اكتشف مجموعتنا المختارة من الكتب المميزة",
@@ -1011,7 +987,7 @@ const content = {
                 content: "To be the primary source of knowledge about the history and culture of the Kingdom of Waddai."
             },
             goals: {
-                title: '<i class="fas fa-target"></i> Our Goals',
+                title: '<i class="fas fa-trophy"></i> Our Goals',
                 content: `
                     <div class="goals-grid">
                         <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -1165,31 +1141,7 @@ const content = {
                         </div>
                     </div>
 
-                    <div class="historical-timeline mt-5">
-                        <h4><i class="fas fa-clock me-2"></i>Major Timeline</h4>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-date">1635</div>
-                                <div class="timeline-content">Foundation of Waddai Kingdom by Sultan Abd al-Karim</div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">1681</div>
-                                <div class="timeline-content">Beginning of Sultan Ya'qub Arif's reign and expansion period</div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">1803</div>
-                                <div class="timeline-content">Sultan Muhammad Sharif moves capital to Abéché</div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">1874</div>
-                                <div class="timeline-content">Beginning of resistance against French colonial expansion</div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">1912</div>
-                                <div class="timeline-content">Fall of the last Sultan of Waddai and end of independent rule</div>
-                            </div>
-                        </div>
-                    </div>
+
                 `
             },
             society: {
@@ -1740,127 +1692,6 @@ const content = {
                     </div>
                 `
             },
-            publications: {
-                title: '<i class="fas fa-book"></i> Publications',
-                content: `<p>A diverse collection of publications about the Kingdom of Waddai:</p>
-                <ul>
-                    <li><i class="fas fa-scroll"></i> Historical documents from the royal era</li>
-                    <li><i class="fas fa-file-alt"></i> Research papers on cultural heritage</li>
-                    <li><i class="fas fa-book-open"></i> Books and articles about kingdom history</li>
-                    <li><i class="fas fa-graduation-cap"></i> Academic studies on society and culture</li>
-                </ul>`,
-                items: []
-            },
-            news: {
-                title: '<i class="fas fa-newspaper"></i> News',
-                content: `<p>Latest updates and news:</p>
-                <ul>
-                    <li><i class="fas fa-search"></i> New historical discoveries</li>
-                    <li><i class="fas fa-flask"></i> Recent research findings</li>
-                    <li><i class="fas fa-users"></i> Community news and events</li>
-                    <li><i class="fas fa-project-diagram"></i> Cultural project developments</li>
-                </ul>`,
-                items: []
-            },
-            events: {
-                title: '<i class="fas fa-calendar-alt"></i> Events',
-                content: `<p>Upcoming and past events:</p>
-                <ul>
-                    <li><i class="fas fa-chalkboard-teacher"></i> Academic conferences</li>
-                    <li><i class="fas fa-music"></i> Cultural celebrations</li>
-                    <li><i class="fas fa-palette"></i> Historical exhibitions</li>
-                    <li><i class="fas fa-tools"></i> Heritage workshops</li>
-                </ul>`,
-                items: []
-            },
-            donate: {
-                title: '<i class="fas fa-hand-holding-heart"></i> Donate',
-                content: `
-                    <div class="donation-info">
-                        <p>For transparency and integrity, an official account will soon be opened in the organization's name for all those wishing to donate. We appreciate your support and cooperation.</p>
-                        <div class="bank-transfer">
-                            <h3><i class="fas fa-university"></i> Bank Transfer</h3>
-                            <p>Bank account information will be added soon</p>
-                        </div>
-                    </div>
-                `
-            },
-            map: {
-                title: '<i class="fas fa-map-marked-alt"></i> Map',
-                content: `
-                    <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d20.8114851!3d13.8287529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11314472a60a8319%3A0xf2526dfd44b27605!2sAb%C3%A9ch%C3%A9%2C%20Chad!5e0!3m2!1sen!2sus!4v1234567890!5m2!1sen!2sus"
-                            width="100%" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                `
-            },
-            video: {
-                title: '<i class="fas fa-video"></i> Video',
-                content: `
-                    <div class="video-section">
-                        <div class="video-grid">
-                            <div class="video-item">
-                                <div class="video-container">
-                                    <video controls poster="" class="video-player">
-                                        <source src="videos/A.mp4" type="video/mp4">
-                                        <source src="videos/A.webm" type="video/webm">
-                                    </video>
-                                    <div class="video-controls">
-                                        <button class="video-play-btn" aria-label="Play/Pause">
-                                            <i class="fas fa-play"></i>
-                                        </button>
-                                    </div>
-                                    <div class="video-overlay">
-                                        <h3 class="video-title">Video A</h3>
-                                        <p class="video-description">Educational content about Kingdom of Waddai</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="video-item">
-                                <div class="video-container">
-                                    <video controls poster="" class="video-player">
-                                        <source src="videos/B.mp4" type="video/mp4">
-                                        <source src="videos/B.webm" type="video/webm">
-                                    </video>
-                                    <div class="video-controls">
-                                        <button class="video-play-btn" aria-label="Play/Pause">
-                                            <i class="fas fa-play"></i>
-                                        </button>
-                                    </div>
-                                    <div class="video-overlay">
-                                        <h3 class="video-title">Video B</h3>
-                                        <p class="video-description">History and culture of the Kingdom</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="video-item">
-                                <div class="video-container">
-                                    <video controls poster="" class="video-player">
-                                        <source src="videos/C.mp4" type="video/mp4">
-                                        <source src="videos/C.webm" type="video/webm">
-                                    </video>
-                                    <div class="video-controls">
-                                        <button class="video-play-btn" aria-label="Play/Pause">
-                                            <i class="fas fa-play"></i>
-                                        </button>
-                                    </div>
-                                    <div class="video-overlay">
-                                        <h3 class="video-title">Video C</h3>
-                                        <p class="video-description">Landmarks and heritage</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `
-            },
             gallery: {
                 title: '<i class="fas fa-images"></i> Gallery',
                 content: `
@@ -2018,51 +1849,51 @@ const content = {
                 },
                 {
                     id: 4,
-                    title: "كبرياء وتحامل",
-                    author: "جين أوستن",
-                    price: "7.99 $",
+                    title: "Pride and Prejudice",
+                    author: "Jane Austen",
+                    price: "$7.99",
                     image: "images/pexels-andyhvu-3244513.jpg"
                 },
                 {
                     id: 5,
-                    title: "الحارس في حقل الشوفان",
-                    author: "ج.د. سالينجر",
-                    price: "6.99 $",
+                    title: "The Catcher in the Rye",
+                    author: "J.D. Salinger",
+                    price: "$6.99",
                     image: "images/pexels-pixabay-268533.jpg"
                 },
                 {
                     id: 6,
-                    title: "الغريب",
-                    author: "ألبير كامو",
-                    price: "11.99 $",
+                    title: "The Stranger",
+                    author: "Albert Camus",
+                    price: "$11.99",
                     image: "images/albert-sukhanov-sB6e1jw9bBQ-unsplash.jpg"
                 },
                 {
                     id: 7,
-                    title: "مئة عام من العزلة",
-                    author: "غابرييل غارسيا ماركيز",
-                    price: "12.99 $",
+                    title: "One Hundred Years of Solitude",
+                    author: "Gabriel García Márquez",
+                    price: "$12.99",
                     image: "images/david-karp-EJIFu_veczw-unsplash.jpg"
                 },
                 {
                     id: 8,
-                    title: "الخيميائي",
-                    author: "باولو كويلو",
-                    price: "9.99 $",
+                    title: "The Alchemist",
+                    author: "Paulo Coelho",
+                    price: "$9.99",
                     image: "images/michael-bourgault-aHetdmuNoO4-unsplash.jpg"
                 },
                 {
                     id: 9,
-                    title: "البؤساء",
-                    author: "فيكتور هوغو",
-                    price: "14.99 $",
+                    title: "Les Misérables",
+                    author: "Victor Hugo",
+                    price: "$14.99",
                     image: "images/pexels-andyhvu-3244513.jpg"
                 },
                 {
                     id: 10,
-                    title: "دون كيخوتي",
-                    author: "ميغيل دي سرفانتس",
-                    price: "13.99 $",
+                    title: "Don Quixote",
+                    author: "Miguel de Cervantes",
+                    price: "$13.99",
                     image: "images/pexels-pixabay-268533.jpg"
                 }
             ]
@@ -2105,7 +1936,7 @@ const content = {
                 content: "Être la principale source de connaissances sur l'histoire et la culture du Royaume du Ouaddaï."
             },
             goals: {
-                title: '<i class="fas fa-target"></i> Nos Objectifs',
+                title: '<i class="fas fa-trophy"></i> Nos Objectifs',
                 content: `
                     <div class="goals-grid">
                         <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -2259,31 +2090,7 @@ const content = {
                         </div>
                     </div>
 
-                    <div class="historical-timeline mt-5">
-                        <h4><i class="fas fa-clock me-2"></i>Ligne temporelle majeure</h4>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-date">1635</div>
-                                <div class="timeline-content">Fondation du Royaume du Ouaddaï par le Sultan Abd al-Karim</div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">1681</div>
-                                <div class="timeline-content">Début du règne du Sultan Ya'qub Arif et de la période d'expansion</div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">1803</div>
-                                <div class="timeline-content">Le Sultan Muhammad Sharif déplace la capitale à Abéché</div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">1874</div>
-                                <div class="timeline-content">Début de la résistance contre l'expansion coloniale française</div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">1912</div>
-                                <div class="timeline-content">Chute du dernier Sultan du Ouaddaï et fin du règne indépendant</div>
-                            </div>
-                        </div>
-                    </div>
+
                 `
             },
             society: {
@@ -2533,127 +2340,6 @@ const content = {
                     </div>
                 `
             },
-            publications: {
-                title: '<i class="fas fa-book"></i> Publications',
-                content: `<p>Une collection diversifiée de publications sur le Royaume du Ouaddaï:</p>
-                <ul>
-                    <li><i class="fas fa-scroll"></i> Documents historiques de l'ère royale</li>
-                    <li><i class="fas fa-file-alt"></i> Recherches sur l'héritage culturel</li>
-                    <li><i class="fas fa-book-open"></i> Livres et articles sur l'histoire du royaume</li>
-                    <li><i class="fas fa-graduation-cap"></i> Études académiques sur la société et la culture</li>
-                </ul>`,
-                items: []
-            },
-            news: {
-                title: '<i class="fas fa-newspaper"></i> Actualités',
-                content: `<p>Dernières mises à jour et actualités:</p>
-                <ul>
-                    <li><i class="fas fa-search"></i> Nouvelles découvertes historiques</li>
-                    <li><i class="fas fa-flask"></i> Nouvelles recherches</li>
-                    <li><i class="fas fa-users"></i> Nouvelles communautaires et événements</li>
-                    <li><i class="fas fa-project-diagram"></i> Développements de projets culturels</li>
-                </ul>`,
-                items: []
-            },
-            events: {
-                title: '<i class="fas fa-calendar-alt"></i> Événements',
-                content: `<p>Événements à venir et passés:</p>
-                <ul>
-                    <li><i class="fas fa-chalkboard-teacher"></i> Conférences académiques</li>
-                    <li><i class="fas fa-music"></i> Celebrations culturelles</li>
-                    <li><i class="fas fa-palette"></i> Expositions historiques</li>
-                    <li><i class="fas fa-tools"></i> Travaux sur l'héritage</li>
-                </ul>`,
-                items: []
-            },
-            donate: {
-                title: '<i class="fas fa-hand-holding-heart"></i> Donner',
-                content: `
-                    <div class="donation-info">
-                        <p>Pour la transparence et l'intégrité, un compte officiel sera bientôt ouvert au nom de l'organisation pour tous ceux qui souhaitent faire un don. Nous apprécions votre soutien et votre coopération.</p>
-                        <div class="bank-transfer">
-                            <h3><i class="fas fa-university"></i> Virement bancaire</h3>
-                            <p>Les informations du compte bancaire seront bientôt ajoutées</p>
-                        </div>
-                    </div>
-                `
-            },
-            map: {
-                title: '<i class="fas fa-map-marked-alt"></i> Carte',
-                content: `
-                    <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d20.8114851!3d13.8287529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11314472a60a8319%3A0xf2526dfd44b27605!2sAb%C3%A9ch%C3%A9%2C%20Chad!5e0!3m2!1sen!2sus!4v1234567890!5m2!1sen!2sus"
-                            width="100%" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                `
-            },
-            video: {
-                title: '<i class="fas fa-video"></i> Vidéo',
-                content: `
-                    <div class="video-section">
-                        <div class="video-grid">
-                            <div class="video-item">
-                                <div class="video-container">
-                                    <video controls poster="" class="video-player">
-                                    <source src="videos/A.mp4" type="video/mp4">
-                                    <source src="videos/A.webm" type="video/webm">
-                                </video>
-                                    <div class="video-controls">
-                                        <button class="video-play-btn" aria-label="Play/Pause">
-                                            <i class="fas fa-play"></i>
-                                        </button>
-                            </div>
-                                    <div class="video-overlay">
-                                        <h3 class="video-title">Vidéo A</h3>
-                                        <p class="video-description">Contenu éducatif sur le Royaume du Ouaddaï</p>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="video-item">
-                                <div class="video-container">
-                                    <video controls poster="" class="video-player">
-                                    <source src="videos/B.mp4" type="video/mp4">
-                                    <source src="videos/B.webm" type="video/webm">
-                                </video>
-                                    <div class="video-controls">
-                                        <button class="video-play-btn" aria-label="Play/Pause">
-                                            <i class="fas fa-play"></i>
-                                        </button>
-                            </div>
-                                    <div class="video-overlay">
-                                        <h3 class="video-title">Vidéo B</h3>
-                                        <p class="video-description">Histoire et culture du Royaume</p>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="video-item">
-                                <div class="video-container">
-                                    <video controls poster="" class="video-player">
-                                    <source src="videos/C.mp4" type="video/mp4">
-                                    <source src="videos/C.webm" type="video/webm">
-                                </video>
-                                    <div class="video-controls">
-                                        <button class="video-play-btn" aria-label="Play/Pause">
-                                            <i class="fas fa-play"></i>
-                                        </button>
-                                    </div>
-                                    <div class="video-overlay">
-                                        <h3 class="video-title">Vidéo C</h3>
-                                        <p class="video-description">Monuments et patrimoine</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `
-            },
             ancientHistory: {
                 title: '<i class="fas fa-history"></i> Histoire ancienne',
                 content: `
@@ -2663,8 +2349,8 @@ const content = {
                                 <div class="card h-100 ancient-card">
                                     <div class="card-body text-center">
                                         <i class="fas fa-palace fa-3x mb-3 text-danger"></i>
-                                        <h5 class="card-title">Royaume de Ouaddaï</h5>
-                                        <p class="card-text">Le grand Royaume de Ouaddaï</p>
+                                        <h5 class="card-title">Royaume de Waddai</h5>
+                                        <p class="card-text">Le grand Royaume de Waddai</p>
                                     </div>
                                 </div>
                             </div>
@@ -2673,7 +2359,7 @@ const content = {
                                     <div class="card-body text-center">
                                         <i class="fas fa-crown fa-3x mb-3 text-warning"></i>
                                         <h5 class="card-title">Tunjur-Dajo</h5>
-                                        <p class="card-text">Royaume ancien qui précède Ouaddaï</p>
+                                        <p class="card-text">Royaume ancien qui précède Waddai</p>
                                     </div>
                                 </div>
                             </div>
@@ -2736,7 +2422,7 @@ const content = {
                                     <div class="card-body text-center">
                                         <i class="fas fa-leaf fa-3x mb-3 text-success"></i>
                                         <h5 class="card-title">Héritage culturel naturel</h5>
-                                        <p class="card-text">Paysages uniques et environnementaux de Ouaddaï</p>
+                                        <p class="card-text">Paysages uniques et environnementaux de Waddai</p>
                                     </div>
                                 </div>
                             </div>
@@ -3059,70 +2745,70 @@ const content = {
                     title: "Gatsby le Magnifique",
                     author: "F. Scott Fitzgerald",
                     price: "$10.99",
-                    image: "images/gallery/albert-sukhanov-sB6e1jw9bBQ-unsplash.jpg"
+                    image: "images/albert-sukhanov-sB6e1jw9bBQ-unsplash.jpg"
                 },
                 {
                     id: 2,
                     title: "Ne tirez pas sur l'oiseau moqueur",
                     author: "Harper Lee",
                     price: "$8.99",
-                    image: "images/gallery/david-karp-EJIFu_veczw-unsplash.jpg"
+                    image: "images/david-karp-EJIFu_veczw-unsplash.jpg"
                 },
                 {
                     id: 3,
                     title: "1984",
                     author: "George Orwell",
                     price: "$9.99",
-                    image: "images/gallery/michael-bourgault-aHetdmuNoO4-unsplash.jpg"
+                    image: "images/michael-bourgault-aHetdmuNoO4-unsplash.jpg"
                 },
                 {
                     id: 4,
                     title: "Orgueil et Préjugés",
                     author: "Jane Austen",
                     price: "$7.99",
-                    image: "images/gallery/pexels-andyhvu-3244513.jpg"
+                    image: "images/pexels-andyhvu-3244513.jpg"
                 },
                 {
                     id: 5,
                     title: "L'Attrape-cœurs",
                     author: "J.D. Salinger",
                     price: "$6.99",
-                    image: "images/gallery/pexels-pixabay-268533.jpg"
+                    image: "images/pexels-pixabay-268533.jpg"
                 },
                 {
                     id: 6,
                     title: "L'Étranger",
                     author: "Albert Camus",
                     price: "$11.99",
-                    image: "images/gallery/albert-sukhanov-sB6e1jw9bBQ-unsplash.jpg"
+                    image: "images/albert-sukhanov-sB6e1jw9bBQ-unsplash.jpg"
                 },
                 {
                     id: 7,
                     title: "Cent ans de solitude",
                     author: "Gabriel García Márquez",
                     price: "$12.99",
-                    image: "images/gallery/david-karp-EJIFu_veczw-unsplash.jpg"
+                    image: "images/david-karp-EJIFu_veczw-unsplash.jpg"
                 },
                 {
                     id: 8,
                     title: "L'Alchimiste",
                     author: "Paulo Coelho",
                     price: "$9.99",
-                    image: "images/gallery/michael-bourgault-aHetdmuNoO4-unsplash.jpg"
+                    image: "images/michael-bourgault-aHetdmuNoO4-unsplash.jpg"
                 },
                 {
                     id: 9,
                     title: "Les Misérables",
                     author: "Victor Hugo",
                     price: "$14.99",
-                    image: "images/gallery/pexels-andyhvu-3244513.jpg"
+                    image: "images/pexels-andyhvu-3244513.jpg"
                 },
                 {
                     id: 10,
                     title: "Don Quichotte",
                     author: "Miguel de Cervantes",
                     price: "$13.99",
-                    image: "images/gallery/pexels-pixabay-268533.jpg"
+                    image: "images/pexels-pixabay-268533.jpg"
                 }
             ]
         }
